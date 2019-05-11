@@ -1,18 +1,15 @@
+@prefix : <http://example.com/owl/families/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix xml: <http://www.w3.org/XML/1998/namespace> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://github.com/markjspivey/nwi/edit/master/nwi.ttl> rdf:type owl:Ontology .
+ :Person  rdf:type owl:Class .
+ :hasWife rdf:type owl:ObjectProperty .
+ :hasAge  rdf:type owl:DatatypeProperty .
 
-@prefix jane: <https://janespod.solid/profile/card#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+ :hasAge  rdfs:domain  :Person ;
+          rdfs:range   xsd:nonNegativeInteger .
 
-jane:me foaf:name "Jane Doe"@en;
-        foaf:givenName "Jane"@en;
-        foaf:familyName "Doe"@en;
-        foaf:knows <https://bill.solid/profile/card#me>,
-                   <https://barb.solid/profile/card#me>.
-<https://bill.solid/profile/card#me> foaf:givenName "William"@en.
-<https://barb.solid/profile/card#me> foaf:givenName "Barbara"@en.
+ :hasWife rdfs:subPropertyOf :hasSpouse .
+ :Mother  rdfs:subClassOf    :Woman .
