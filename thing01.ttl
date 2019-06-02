@@ -6,4 +6,7 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
  :01 rdf:type nwi:Thing ;
-     nwi:hasData "mark" .
+     nwi:hasData "mark" ;
+     nwi:hasSource https://github.com/markjspivey/nwi/edit/master/thing01.ttl01 ;
+     nwi:hasTarget https://github.com/markjspivey/nwi/edit/master/thing01.ttl01 .
+
