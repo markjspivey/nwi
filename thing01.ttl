@@ -6,7 +6,7 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
  :hasData rdf:type owl:DatatypeProperty ;
-          rdfs:domain :Thing ;
+          rdfs:domain nwi:Thing ;
           rdfs:range xsd:string .
 
  :01 rdf:type nwi:Thing ;
