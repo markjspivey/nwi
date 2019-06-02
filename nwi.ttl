@@ -4,11 +4,16 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
- :Thing  rdf:type owl:Class .
+ :Thing rdf:type owl:Class .
 
  :hasData rdf:type owl:DatatypeProperty ;
           rdfs:domain :Thing ;
           rdfs:range xsd:string .
 
- :hasSource rdf:type owl:ObjectProperty .
- :hasTarget rdf:type owl:ObjectProperty .
+ :hasSource rdf:type owl:ObjectProperty ;
+            rdfs:domain :Thing ;
+            rdfs:range :Thing .
+
+ :hasTarget rdf:type owl:ObjectProperty ;
+            rdfs:domain :Thing ;
+            rdfs:range :Thing .
