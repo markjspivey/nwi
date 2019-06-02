@@ -6,8 +6,8 @@
 
  :Thing  rdf:type owl:Class .
 
- :hasData rdf:type owl:DatatypeProperty .
-          rdfs:domain :Thing .
+ :hasData rdf:type owl:DatatypeProperty
+          rdfs:domain :Thing
           rdfs:range xsd:string .
 
  :hasSource rdf:type owl:ObjectProperty .
