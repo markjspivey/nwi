@@ -1,12 +1,11 @@
-@base <https://markjspivey.github.io/nwi/thing03.ttl#> .
+@base <https://markjspivey.github.io/nwi/thing01.ttl#> .
 @prefix nwi: <https://markjspivey.github.io/nwi/nwi.ttl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<#03>
+<#01>
      rdf:type nwi:Thing ;
-     nwi:hasSource <https://markjspivey.github.io/nwi/thing03.ttl#01> ;
-     nwi:hasTarget <https://markjspivey.github.io/nwi/thing03.ttl#02> .
+     nwi:hasData "mark" .
 
