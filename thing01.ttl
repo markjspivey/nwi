@@ -5,12 +5,8 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
- :hasData rdf:type owl:DatatypeProperty ;
-          rdfs:domain nwi:Thing ;
-          rdfs:range xsd:string .
-
  :01 rdf:type nwi:Thing ;
-     :hasData "mark" ;
+     nwi:hasData "mark" ;
      nwi:hasSource <https://github.com/markjspivey/nwi/edit/master/thing01.ttl01> ;
      nwi:hasTarget <https://github.com/markjspivey/nwi/edit/master/thing01.ttl01> .
 
