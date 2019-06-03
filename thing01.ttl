@@ -7,6 +7,6 @@
 
  :01 rdf:type nwi:Thing ;
      nwi:hasData "mark" ;
-     nwi:hasSource <https://github.com/markjspivey/nwi/edit/master/thing01.ttl01> ;
-     nwi:hasTarget <https://github.com/markjspivey/nwi/edit/master/thing01.ttl01> .
+     nwi:hasSource :01 ;
+     nwi:hasTarget :01 .
 
