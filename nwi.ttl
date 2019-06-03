@@ -9,15 +9,15 @@
 
 <#hasData>
         rdf:type owl:DatatypeProperty ;
-        rdfs:domain :Thing ;
+        rdfs:domain <#Thing> ;
         rdfs:range xsd:string .
 
 <#hasSource>
         rdf:type owl:ObjectProperty ;
-        rdfs:domain :Thing ;
-        rdfs:range :Thing .
+        rdfs:domain <#Thing> ;
+        rdfs:range <#Thing> .
 
 <#hasTarget> 
         rdf:type owl:ObjectProperty ;
-        rdfs:domain :Thing ;
-        rdfs:range :Thing .
+        rdfs:domain <#Thing> ;
+        rdfs:range <#Thing> .
